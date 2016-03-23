@@ -1,0 +1,10 @@
+<h1>BaiDu result for <%= search %></h1>
+<% if(results.length){ %>
+    <ul>
+    <% for (var i = 0; i < results.length; i++){ %>
+        <li><%= result[i].text %></li>
+    <% } %>
+    </ul>
+<% } else { %>
+   <p> No result</p>
+<% } %>
